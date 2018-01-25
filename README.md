@@ -22,18 +22,19 @@ composer require vsilva472/laravel-cpf
  Vsilva472\LaravelCPF\LaravelCPFServiceProvider::class,
  ``` 
  
-* Publicar os arquivos de idiomas com as mensagens de erro
+* Publicar os arquivos de idiomas com as mensagens de erro:
 ```php
  php artisan vendor:publish --tag=lcpf_lang
 ```
 
 
-Após publicar os arquivos de idiomas, caso deseje, você poderá customizar as mensagens de erro bastando aletar o arquivo `resources/lang/{lang}/cpf.php`, onde **{lang}** é o código do idioma (ex: pt-br) que você deseja alterar.
+
+> Você poderá customizar as mensagens de erro. Para isso, abra o arquivo `/resources/lang/{lang}/cpf.php`, onde **{lang}** é o código do idioma (ex: pt-br) que você deseja alterar.
 
 
 
 ## Como utilizar
-A forma de utilização é a mesma de qualquer outra regra pré existente. O nome do validador para cpf é "cpf". Veja um exemplo básico:
+A forma de utilização é a mesma de qualquer outra regra pré-existente. O nome do validador para cpf é "cpf". Veja um exemplo básico:
 
 ```php
 $request->validate([
