@@ -2,7 +2,7 @@
 
 ## Descrição
 
-LaravelCPF é uma extensão do validator do Laravel para validar CPFs de forma simples.
+LaravelCPF é uma extensão do validator do Laravel para validar CPFs (independente se o valor possui máscara aplicada 999.999.999-99 ou não) de forma simples.
 
 
 ## Requisitos
@@ -21,6 +21,16 @@ composer require vsilva472/laravel-cpf
 ```php
  Vsilva472\LaravelCPF\LaravelCPFServiceProvider::class,
  ``` 
+ 
+* Publicar os arquivos de idiomas com as mensagens de erro
+```php
+ php artisan vendor:publish --tag=lcpf_lang
+```
+
+
+Após publicar os arquivos de idiomas, caso deseje, você poderá customizar as mensagens de erro bastando aletar o arquivo `resources/lang/{lang}/cpf.php`, onde **{lang}** é o código do idioma (ex: pt-br) que você deseja alterar.
+
+
 
 ## Como utilizar
 A forma de utilização é a mesma de qualquer outra regra pré existente. O nome do validador para cpf é "cpf". Veja um exemplo básico:
@@ -30,6 +40,7 @@ $request->validate([
     'field_name' => ['cpf'],
 ]);
 ```
+
 Este pacote funciona também com [Form Resquest Validations](https://laravel.com/docs/5.5/validation#form-request-validation), veja um exemplo abaixo
 
 ```php
@@ -53,6 +64,9 @@ public function rules()
 
 Para mais informações sobre outras formas de validação consulte a [documentação oficial](https://laravel.com/docs/5.5/validation) do Laravel.
 
+
+## Changelog
+Para consultar o log de alterações acesse o arquivo [CHANGELOG.md](https://github.com/vsilva472/laravel-cpf/blob/master/CHANGELOG.md)
 
 ## Licença
 MIT

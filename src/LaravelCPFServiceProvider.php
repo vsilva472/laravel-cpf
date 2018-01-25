@@ -19,7 +19,16 @@ class LaravelCPFServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app['validator']->extend('cpf', "Vsilva472\LaravelCPF\LaravelCPF@validate", 'CPF Inválido');
+        // publish langague file
+        $lang_path = base_path('resources/lang');
+
+        $this->publishes([
+            __DIR__ . "/resources/lang/en/cpf.php" => $lang_path . '/en/cpf.php',
+            __DIR__ . "/resources/lang/pt-br/cpf.php" => $lang_path . '/pt-br/cpf.php'
+        ],'lcpf_lang');
+
+        // Make the cpf validator
+        $this->app['validator']->extend('cpf', "Vsilva472\LaravelCPF\LaravelCPF@validate", trans('cpf.cpf'));
     }
 
     /**
