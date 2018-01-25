@@ -1,6 +1,6 @@
 {
     "name": "vsilva472/laravel-cpf",
-    "description": "Pacote com valida\u0000\u0000o de CPF para Laravel",
+    "description": "Validar CPF em Laravel",
     "license": "MIT",
     "authors": [
         {
