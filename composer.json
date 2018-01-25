@@ -1,0 +1,19 @@
+{
+    "name": "vsilva472/laravel-cpf",
+    "description": "Pacote com valida\u0000\u0000o de CPF para Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinicius Silva",
+            "email": "vsilva472@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4" : {
+        "Vsilva472\\LaravelCPF\\" : "src/"
+      }
+    },
+    "require": {
+        "vsilva472/phpcpf" : "*"
+    }
+}
