@@ -65,9 +65,14 @@ public function rules()
 
 Para mais informações sobre outras formas de validação consulte a [documentação oficial](https://laravel.com/docs/5.5/validation) do Laravel.
 
-
-## Changelog
+### Changelog
 Para consultar o log de alterações acesse o arquivo [CHANGELOG.md](https://github.com/vsilva472/laravel-cpf/blob/master/CHANGELOG.md)
 
-## Licença
+### Donation
+Help me to improve this project sending me some **HTMLCOIN**  
+Wallet: **[HqgaiK6T1o2JP4p3p34CZp2g3XnSsSdCXp](htmlcoin:HqgaiK6T1o2JP4p3p34CZp2g3XnSsSdCXp?label=Doa%C3%A7%C3%B5es%20Github)**  
+  
+![Doar HTMLCoin](https://www.viniciusdesouza.com.br/img/htmlcoin.png)
+
+#### Licença
 MIT
