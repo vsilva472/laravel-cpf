@@ -15,7 +15,6 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Vsilva472\\Tests\\": "tests/",
       "Vsilva472\\Tests\\LaravelCPF\\": "tests/"
     }
   },

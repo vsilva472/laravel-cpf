@@ -1,6 +1,6 @@
 <?php
 
-namespace Vsilva472\Tests;
+namespace Vsilva472\Tests\LaravelCPF;
 
 use PHPUnit\Framework\TestCase;
 use Vsilva472\LaravelCPF\LaravelCPF;
