@@ -3,3 +3,4 @@
 composer.phar
 .DS_STORE
 /.git
+/composer.lock
