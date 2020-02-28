@@ -1,5 +1,7 @@
 # Validação CPF com Laravel
 
+<a href="https://travis-ci.org/vsilva472/laravel-cpf"><img src="https://travis-ci.org/vsilva472/laravel-cpf.svg?branch=master" /></a>
+
 ## Descrição
 
 LaravelCPF é uma extensão do validator do Laravel para validar CPFs (independente se o valor possui máscara aplicada 999.999.999-99 ou não) de forma simples.
@@ -62,6 +64,11 @@ public function rules()
     ];
 }
 ```
+
+
+### Testes
+Execute o comando na raiz do projeto `./vendor/bin/phpunit`
+
 
 Para mais informações sobre outras formas de validação consulte a [documentação oficial](https://laravel.com/docs/5.5/validation) do Laravel.
 
