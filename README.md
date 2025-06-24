@@ -7,9 +7,13 @@
 LaravelCPF é uma extensão do validator do Laravel para validar CPFs (independente se o valor possui máscara aplicada 999.999.999-99 ou não) de forma simples.
 
 
-## Requisitos
-* [PHP](https://php.net) 5.6+
-* [Laravel](https://laravel.com/) 5.1+
+## Compatibilidade com versões do Laravel
+
+| Versão do Laravel | Pacote recomendado        |
+|-------------------|---------------------------|
+| 5.x até 8.x       | [`laravel-cpf`](https://github.com/vsilva472/laravel-cpf) |
+| 9.x ou superior   | [`brcpf`](https://github.com/vsilva472/brcpf)             |
+
 
 
 ## Instalação 
